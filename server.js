@@ -1,9 +1,16 @@
 const express = require('express')
-const app = express()
-const port = 3000
+require('dotenv').config();
+
+console.log('dfg:', process.env);
+
+const app = express();
+const port = process.env.PORT || 8088;
+//config template engine
+app.set('views', './src/views')
+app.set('view engine', 'ejs')
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.render('example.ejs')
 })
 
 app.listen(port, () => {

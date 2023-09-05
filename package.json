@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,11 @@
   },
   "homepage": "https://github.com/Liminfee2022/fullstack_backend_zero#readme",
   "dependencies": {
+    "dotenv": "^16.3.1",
+    "ejs": "3.1.8",
     "express": "4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
