@@ -1,0 +1,23 @@
+{
+  "name": "full-backend-zero",
+  "version": "1.0.0",
+  "description": "fullstask backend zero",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liminfee2022/fullstack_backend_zero.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Liminfee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Liminfee2022/fullstack_backend_zero/issues"
+  },
+  "homepage": "https://github.com/Liminfee2022/fullstack_backend_zero#readme"
+}
