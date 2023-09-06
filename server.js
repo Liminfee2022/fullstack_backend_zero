@@ -1,17 +1,17 @@
-const express = require('express')
 require('dotenv').config();
-
-console.log('dfg:', process.env);
+const express = require('express')
+const path = require('path');
+const configViewEngine = require('./src/config/viewEngine');
+const webRoutes = require('./src/routes/web');
 
 const app = express();
 const port = process.env.PORT || 8088;
-//config template engine
-app.set('views', './src/views')
-app.set('view engine', 'ejs')
 
-app.get('/', (req, res) => {
-  res.render('example.ejs')
-})
+//config template engine
+configViewEngine(app);
+
+//Route
+app.use('/test', webRoutes);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
